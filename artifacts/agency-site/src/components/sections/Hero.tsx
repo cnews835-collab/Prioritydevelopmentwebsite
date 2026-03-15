@@ -28,8 +28,8 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
           className="text-5xl md:text-7xl lg:text-8xl font-display font-bold text-foreground leading-tight mb-6 tracking-tight"
         >
-          We Build It. <br />
-          <span className="text-primary">You Play It.</span>
+          Create. Build. <br />
+          <span className="text-primary">Evolve.</span>
         </motion.h1>
 
         <motion.p
