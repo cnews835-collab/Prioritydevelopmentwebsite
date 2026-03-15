@@ -29,9 +29,9 @@ export function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         <a href="#home" className="flex items-center gap-3 z-50 relative">
-          <img src="/logo.png" alt="Agency Logo" className="w-10 h-10 object-contain" />
+          <img src="/logo.png" alt="Priority Development Logo" className="w-10 h-10 object-contain" />
           <span className="font-display text-xl font-bold tracking-wide text-white">
-            [Agency Name]
+            Priority Development
           </span>
         </a>
 
@@ -50,7 +50,7 @@ export function Navbar() {
             href="#contact"
             className="px-6 py-2.5 rounded-full text-sm font-semibold bg-primary text-white hover:bg-primary/90 hover:shadow-[0_0_20px_rgba(30,127,232,0.4)] transition-all duration-300"
           >
-            Get a Quote
+            Join Us
           </a>
         </nav>
 
@@ -86,7 +86,7 @@ export function Navbar() {
                 onClick={() => setMobileMenuOpen(false)}
                 className="mt-4 px-8 py-4 rounded-full text-lg font-bold bg-primary text-white"
               >
-                Get a Quote
+                Join Us
               </a>
             </motion.div>
           )}

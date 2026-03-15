@@ -12,9 +12,9 @@ export function About() {
             className="relative"
           >
             <div className="aspect-[4/3] rounded-3xl overflow-hidden glass-panel p-2">
-              <img 
+              <img
                 src={`${import.meta.env.BASE_URL}images/about-art.png`}
-                alt="Creative process abstract art" 
+                alt="Priority Development team vibe"
                 className="w-full h-full object-cover rounded-2xl"
               />
             </div>
@@ -27,32 +27,29 @@ export function About() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-5xl font-display font-bold mb-6">
-              We Don't Just Create Art. <br className="hidden md:block" />
-              We Craft <span className="text-primary">Legacies.</span>
+              Not a Company. <br className="hidden md:block" />
+              Just a <span className="text-primary">Side Project.</span>
             </h2>
             <div className="space-y-6 text-lg text-muted-foreground">
               <p>
-                Founded on the principle that digital art should evoke emotion and inspire action, [Agency Name] is a premium commission agency serving clients worldwide.
+                Priority Development is a passion-driven side project built by a small group of developers and creators who love Roblox, Discord, and the web. No corporate fluff — just people who enjoy building cool things together.
               </p>
               <p>
-                Our curated team of specialist artists and designers work collaboratively to ensure every brushstroke, pixel, and vector aligns perfectly with your vision. Whether you need a singular breathtaking illustration or a comprehensive brand identity, we deliver excellence.
+                We work on Roblox games, Discord bots, community servers, and web tools whenever we get the chance. Everything we make comes from genuine interest, and we're always looking for likeminded people to collaborate with.
               </p>
             </div>
-            
+
             <div className="mt-10 pt-10 border-t border-white/10 flex items-center gap-6">
               <div className="flex -space-x-4">
-                {/* agency team members generic avatars */}
-                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&q=80" alt="Team member" className="w-12 h-12 rounded-full border-2 border-background object-cover" />
-                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&q=80" alt="Team member" className="w-12 h-12 rounded-full border-2 border-background object-cover" />
-                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Team member" className="w-12 h-12 rounded-full border-2 border-background object-cover" />
-                <div className="w-12 h-12 rounded-full border-2 border-background bg-primary flex items-center justify-center text-xs font-bold text-white z-10">
-                  +12
-                </div>
+                <div className="w-12 h-12 rounded-full border-2 border-background bg-primary/40 flex items-center justify-center text-xs font-bold text-white">PD</div>
+                <div className="w-12 h-12 rounded-full border-2 border-background bg-cyan-500/40 flex items-center justify-center text-xs font-bold text-white">RB</div>
+                <div className="w-12 h-12 rounded-full border-2 border-background bg-indigo-500/40 flex items-center justify-center text-xs font-bold text-white">DC</div>
+                <div className="w-12 h-12 rounded-full border-2 border-background bg-primary flex items-center justify-center text-xs font-bold text-white z-10">+</div>
               </div>
               <div className="text-sm font-medium">
-                <span className="text-white">Elite Artists</span>
+                <span className="text-white">Small team, big ideas</span>
                 <br />
-                <span className="text-muted-foreground">Ready for your project</span>
+                <span className="text-muted-foreground">Always open to collaborators</span>
               </div>
             </div>
           </motion.div>

@@ -3,19 +3,19 @@ import { Quote } from "lucide-react";
 
 const testimonials = [
   {
-    text: "The level of detail they brought to our character designs was astounding. They didn't just draw them; they brought them to life.",
-    author: "Sarah Jenkins",
-    role: "Art Director, Nova Studios"
+    text: "The Discord bot they built for our server completely transformed how we manage our community. Moderation, leveling, events — all in one. Insane quality for a side project.",
+    author: "xXDarkWolfXx",
+    role: "Server Owner · 8,000 members"
   },
   {
-    text: "Working with this agency was seamless. They understood our brand vision immediately and delivered a visual identity that perfectly captures our essence.",
-    author: "Marcus Chen",
-    role: "Founder, Zenith Tech"
+    text: "They scripted an entire economy system for my Roblox game in a weekend. The code was clean and it just worked. Huge respect to the Priority Dev team.",
+    author: "BuilderBro_Dev",
+    role: "Roblox Game Developer"
   },
   {
-    text: "I commissioned a digital portrait and the result exceeded all my expectations. True professionals who master their craft.",
-    author: "Elena Rodriguez",
-    role: "Independent Author"
+    text: "Super cool people to work with. They set up our whole Discord from scratch — roles, bots, channel structure. It looked way more professional than we expected.",
+    author: "crunchtime_rb",
+    role: "Community Lead"
   }
 ];
 
@@ -23,17 +23,17 @@ export function Testimonials() {
   return (
     <section className="py-24 md:py-32 bg-card/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="text-center max-w-3xl mx-auto mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-display font-bold mb-6">
-            Client <span className="text-primary">Stories</span>
+            What People <span className="text-primary">Say</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            Don't just take our word for it. Here's what our partners have to say about working with us.
+            Feedback from communities and devs we've collaborated with along the way.
           </p>
         </motion.div>
 
