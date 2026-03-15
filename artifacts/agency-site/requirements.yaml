@@ -1,0 +1,16 @@
+packages:
+  "framer-motion": "For premium page transitions, scroll-triggered animations, and smooth layout changes"
+  "react-hook-form": "For robust contact form state management"
+  "@hookform/resolvers": "For Zod schema validation integration with react-hook-form"
+
+images:
+  - path: "artifacts/agency-site/public/images/hero-glow.png"
+    description: "Abstract soft gradient mesh background in deep blue and cyan on a dark background, minimal, premium, cinematic lighting"
+    aspect_ratio: "16:9"
+  - path: "artifacts/agency-site/public/images/about-art.png"
+    description: "A visually striking 3D abstract digital art piece showing creative process, floating geometric shapes, deep blue and metallic textures, high end agency aesthetic"
+    aspect_ratio: "4:3"
+
+notes:
+  - This is a purely static portfolio site so no backend API integration is required.
+  - The contact form will simulate submission and show a success toast.
