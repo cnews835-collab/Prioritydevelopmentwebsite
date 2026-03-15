@@ -36,7 +36,7 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 md:py-32 relative">
+    <section id="contact" className="py-24 md:py-32 relative bg-secondary/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           <motion.div
@@ -44,7 +44,7 @@ export function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-6xl font-display font-bold mb-6">
+            <h2 className="text-4xl md:text-6xl font-display font-bold mb-6 text-foreground tracking-tight">
               Let's Build <br />
               <span className="text-primary">Together.</span>
             </h2>
@@ -53,22 +53,22 @@ export function Contact() {
             </p>
 
             <div className="space-y-6">
-              <div className="flex items-center gap-4 glass-panel p-4 rounded-2xl w-max">
-                <div className="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center text-primary">
+              <div className="flex items-center gap-4 bg-white border border-border shadow-sm p-4 rounded-2xl w-max">
+                <div className="w-12 h-12 bg-accent/30 rounded-xl flex items-center justify-center text-primary">
                   <MessageSquare className="w-6 h-6" />
                 </div>
                 <div>
                   <div className="text-sm text-muted-foreground">Discord Server</div>
-                  <div className="font-medium text-white">discord.gg/prioritydev</div>
+                  <div className="font-medium text-foreground">discord.gg/prioritydev</div>
                 </div>
               </div>
-              <div className="flex items-center gap-4 glass-panel p-4 rounded-2xl w-max">
-                <div className="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center text-primary">
+              <div className="flex items-center gap-4 bg-white border border-border shadow-sm p-4 rounded-2xl w-max">
+                <div className="w-12 h-12 bg-accent/30 rounded-xl flex items-center justify-center text-primary">
                   <Gamepad2 className="w-6 h-6" />
                 </div>
                 <div>
                   <div className="text-sm text-muted-foreground">Roblox Group</div>
-                  <div className="font-medium text-white">Priority Development</div>
+                  <div className="font-medium text-foreground">Priority Development</div>
                 </div>
               </div>
             </div>
@@ -78,24 +78,24 @@ export function Contact() {
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="glass-panel p-8 md:p-10 rounded-3xl"
+            className="bg-white border border-border shadow-lg p-8 md:p-10 rounded-3xl"
           >
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <label className="text-sm font-medium text-white">Your Name</label>
+                  <label className="text-sm font-semibold text-foreground">Your Name</label>
                   <input
                     {...register("name")}
-                    className="w-full bg-background/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
+                    className="w-full bg-secondary border border-border rounded-xl px-4 py-3 text-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
                     placeholder="Username or name"
                   />
                   {errors.name && <p className="text-destructive text-xs">{errors.name.message}</p>}
                 </div>
                 <div className="space-y-2">
-                  <label className="text-sm font-medium text-white">Discord Username</label>
+                  <label className="text-sm font-semibold text-foreground">Discord Username</label>
                   <input
                     {...register("discord")}
-                    className="w-full bg-background/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
+                    className="w-full bg-secondary border border-border rounded-xl px-4 py-3 text-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
                     placeholder="username#0000"
                   />
                   {errors.discord && <p className="text-destructive text-xs">{errors.discord.message}</p>}
@@ -103,29 +103,29 @@ export function Contact() {
               </div>
 
               <div className="space-y-2">
-                <label className="text-sm font-medium text-white">What are you looking to build?</label>
+                <label className="text-sm font-semibold text-foreground">What are you looking to build?</label>
                 <select
                   {...register("projectType")}
-                  className="w-full bg-background/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all appearance-none"
+                  className="w-full bg-secondary border border-border rounded-xl px-4 py-3 text-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all appearance-none"
                 >
-                  <option value="" disabled className="bg-card">Select a type</option>
-                  <option value="roblox-game" className="bg-card">Roblox Game / Experience</option>
-                  <option value="roblox-script" className="bg-card">Roblox Scripting / Systems</option>
-                  <option value="discord-bot" className="bg-card">Discord Bot</option>
-                  <option value="discord-server" className="bg-card">Discord Server Setup</option>
-                  <option value="website" className="bg-card">Website / Web Tool</option>
-                  <option value="collab" className="bg-card">Just want to collaborate</option>
-                  <option value="other" className="bg-card">Something else</option>
+                  <option value="" disabled className="bg-white">Select a type</option>
+                  <option value="roblox-game" className="bg-white">Roblox Game / Experience</option>
+                  <option value="roblox-script" className="bg-white">Roblox Scripting / Systems</option>
+                  <option value="discord-bot" className="bg-white">Discord Bot</option>
+                  <option value="discord-server" className="bg-white">Discord Server Setup</option>
+                  <option value="website" className="bg-white">Website / Web Tool</option>
+                  <option value="collab" className="bg-white">Just want to collaborate</option>
+                  <option value="other" className="bg-white">Something else</option>
                 </select>
                 {errors.projectType && <p className="text-destructive text-xs">{errors.projectType.message}</p>}
               </div>
 
               <div className="space-y-2">
-                <label className="text-sm font-medium text-white">Tell us about it</label>
+                <label className="text-sm font-semibold text-foreground">Tell us about it</label>
                 <textarea
                   {...register("message")}
                   rows={4}
-                  className="w-full bg-background/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all resize-none"
+                  className="w-full bg-secondary border border-border rounded-xl px-4 py-3 text-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all resize-none"
                   placeholder="What's the idea? Any details help..."
                 />
                 {errors.message && <p className="text-destructive text-xs">{errors.message.message}</p>}
@@ -134,7 +134,7 @@ export function Contact() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full py-4 rounded-xl font-bold text-white bg-primary hover:bg-primary/90 transition-all duration-300 flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed shadow-[0_0_20px_rgba(30,127,232,0.3)] hover:shadow-[0_0_30px_rgba(30,127,232,0.5)]"
+                className="w-full py-4 rounded-xl font-bold text-white bg-primary hover:bg-primary/90 transition-all duration-300 flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed shadow-md hover:shadow-lg"
               >
                 {isSubmitting ? (
                   <>

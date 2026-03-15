@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 
 @theme inline {
-  --font-sans: 'Plus Jakarta Sans', sans-serif;
-  --font-display: 'Syne', sans-serif;
+  --font-sans: 'Space Grotesk', sans-serif;
+  --font-display: 'Space Grotesk', sans-serif;
 
   --color-background: hsl(var(--background));
   --color-foreground: hsl(var(--foreground));
@@ -41,33 +41,33 @@
 }
 
 :root {
-  /* Force Dark Mode Theme for Premium Agency Vibe */
-  --background: 240 20% 5%;
-  --foreground: 0 0% 98%;
+  /* Solvra-like Light Mode Theme */
+  --background: 210 50% 98%;
+  --foreground: 240 10% 10%;
   
-  --card: 240 18% 8%;
-  --card-foreground: 0 0% 98%;
+  --card: 0 0% 100%;
+  --card-foreground: 240 10% 10%;
   
-  --popover: 240 18% 8%;
-  --popover-foreground: 0 0% 98%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 240 10% 10%;
   
   --primary: 211 83% 51%;
   --primary-foreground: 0 0% 100%;
   
-  --secondary: 240 10% 15%;
-  --secondary-foreground: 0 0% 98%;
+  --secondary: 210 40% 96%;
+  --secondary-foreground: 240 10% 10%;
   
-  --muted: 240 10% 12%;
-  --muted-foreground: 240 5% 65%;
+  --muted: 210 40% 96%;
+  --muted-foreground: 215 16% 47%;
   
-  --accent: 211 83% 20%;
-  --accent-foreground: 211 83% 90%;
+  --accent: 209 100% 83%; /* #add8ff */
+  --accent-foreground: 240 10% 10%;
   
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 98%;
 
-  --border: 240 15% 15%;
-  --input: 240 15% 15%;
+  --border: 214 32% 91%;
+  --input: 214 32% 91%;
   --ring: 211 83% 51%;
 
   --radius: 0.75rem;
@@ -92,11 +92,11 @@
 
 @layer utilities {
   .text-glow {
-    text-shadow: 0 0 20px hsl(var(--primary) / 0.5);
+    text-shadow: 0 0 20px hsl(var(--primary) / 0.3);
   }
   
   .glass-panel {
-    @apply bg-card/60 backdrop-blur-xl border border-white/5;
+    @apply bg-white/80 backdrop-blur-xl border border-border shadow-sm;
   }
 }
 
@@ -110,10 +110,10 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: hsl(var(--muted));
+  background: hsl(var(--border));
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: hsl(var(--secondary));
+  background: hsl(var(--muted-foreground));
 }

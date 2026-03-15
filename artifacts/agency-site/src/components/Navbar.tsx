@@ -24,13 +24,13 @@ export function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "glass-panel py-4" : "bg-transparent py-6"
+        isScrolled ? "bg-white/90 backdrop-blur-md border-b border-border py-4 shadow-sm" : "bg-transparent py-6"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         <a href="#home" className="flex items-center gap-3 z-50 relative">
           <img src="/logo.png" alt="Priority Development Logo" className="w-10 h-10 object-contain" />
-          <span className="font-display text-xl font-bold tracking-wide text-white">
+          <span className="font-display text-xl font-bold tracking-wide text-foreground">
             Priority Development
           </span>
         </a>
@@ -41,14 +41,14 @@ export function Navbar() {
             <a
               key={link.name}
               href={link.href}
-              className="text-sm font-medium text-muted-foreground hover:text-white transition-colors duration-200"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors duration-200"
             >
               {link.name}
             </a>
           ))}
           <a
             href="#contact"
-            className="px-6 py-2.5 rounded-full text-sm font-semibold bg-primary text-white hover:bg-primary/90 hover:shadow-[0_0_20px_rgba(30,127,232,0.4)] transition-all duration-300"
+            className="px-6 py-2.5 rounded-full text-sm font-semibold bg-primary text-white hover:bg-primary/90 hover:shadow-lg transition-all duration-300"
           >
             Join Us
           </a>
@@ -56,7 +56,7 @@ export function Navbar() {
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden text-white z-50 relative p-2"
+          className="md:hidden text-foreground z-50 relative p-2"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -69,14 +69,14 @@ export function Navbar() {
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
-              className="absolute top-0 left-0 right-0 h-screen bg-background/95 backdrop-blur-3xl flex flex-col items-center justify-center gap-8 md:hidden"
+              className="absolute top-0 left-0 right-0 h-screen bg-white/95 backdrop-blur-xl flex flex-col items-center justify-center gap-8 md:hidden"
             >
               {navLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="text-2xl font-display font-bold text-white hover:text-primary transition-colors"
+                  className="text-2xl font-display font-bold text-foreground hover:text-primary transition-colors"
                 >
                   {link.name}
                 </a>

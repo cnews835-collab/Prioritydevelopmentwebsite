@@ -21,7 +21,7 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section className="py-24 md:py-32 bg-card/30">
+    <section className="py-24 md:py-32 bg-secondary/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -29,7 +29,7 @@ export function Testimonials() {
           viewport={{ once: true }}
           className="text-center max-w-3xl mx-auto mb-16"
         >
-          <h2 className="text-3xl md:text-5xl font-display font-bold mb-6">
+          <h2 className="text-3xl md:text-5xl font-display font-bold mb-6 text-foreground tracking-tight">
             What People <span className="text-primary">Say</span>
           </h2>
           <p className="text-muted-foreground text-lg">
@@ -45,7 +45,7 @@ export function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="glass-panel p-8 rounded-3xl relative"
+              className="bg-white p-8 rounded-3xl relative border border-border shadow-sm"
             >
               <Quote className="absolute top-6 right-8 w-12 h-12 text-primary/10" />
               <div className="flex gap-1 mb-6 text-primary">
@@ -55,12 +55,12 @@ export function Testimonials() {
                   </svg>
                 ))}
               </div>
-              <p className="text-lg text-white mb-8 relative z-10 leading-relaxed">
+              <p className="text-lg text-foreground mb-8 relative z-10 leading-relaxed font-medium">
                 "{item.text}"
               </p>
               <div>
-                <div className="font-bold text-white font-display">{item.author}</div>
-                <div className="text-sm text-primary">{item.role}</div>
+                <div className="font-bold text-foreground font-display">{item.author}</div>
+                <div className="text-sm text-primary font-medium">{item.role}</div>
               </div>
             </motion.div>
           ))}
