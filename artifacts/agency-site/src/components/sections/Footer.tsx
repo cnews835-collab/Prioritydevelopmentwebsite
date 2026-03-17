@@ -28,7 +28,7 @@ export function Footer() {
             <div>
               <h4 className="text-white font-bold mb-4">Find Us</h4>
               <ul className="space-y-2">
-                <li><a href="#" className="text-slate-400 hover:text-accent transition-colors">Discord</a></li>
+                <li><a href="https://discord.gg/SfyeZFAd" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-accent transition-colors">Discord</a></li>
                 <li><a href="#" className="text-slate-400 hover:text-accent transition-colors">Roblox Group</a></li>
                 <li><a href="#" className="text-slate-400 hover:text-accent transition-colors">Twitter / X</a></li>
                 <li><a href="#" className="text-slate-400 hover:text-accent transition-colors">GitHub</a></li>

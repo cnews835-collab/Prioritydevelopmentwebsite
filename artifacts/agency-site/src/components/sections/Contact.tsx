@@ -53,15 +53,20 @@ export function Contact() {
             </p>
 
             <div className="space-y-6">
-              <div className="flex items-center gap-4 bg-white border border-border shadow-sm p-4 rounded-2xl w-max">
+              <a
+                href="https://discord.gg/SfyeZFAd"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-4 bg-white border border-border shadow-sm p-4 rounded-2xl w-max hover:border-primary transition-colors"
+              >
                 <div className="w-12 h-12 bg-accent/30 rounded-xl flex items-center justify-center text-primary">
                   <MessageSquare className="w-6 h-6" />
                 </div>
                 <div>
                   <div className="text-sm text-muted-foreground">Discord Server</div>
-                  <div className="font-medium text-foreground">discord.gg/prioritydev</div>
+                  <div className="font-medium text-foreground">discord.gg/SfyeZFAd</div>
                 </div>
-              </div>
+              </a>
               <div className="flex items-center gap-4 bg-white border border-border shadow-sm p-4 rounded-2xl w-max">
                 <div className="w-12 h-12 bg-accent/30 rounded-xl flex items-center justify-center text-primary">
                   <Gamepad2 className="w-6 h-6" />

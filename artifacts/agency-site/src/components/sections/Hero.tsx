@@ -48,7 +48,9 @@ export function Hero() {
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <a
-            href="#contact"
+            href="https://discord.gg/SfyeZFAd"
+            target="_blank"
+            rel="noopener noreferrer"
             className="w-full sm:w-auto group px-8 py-4 rounded-full font-bold text-white bg-primary hover:bg-primary/90 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl hover:-translate-y-0.5"
           >
             Join Our Discord
