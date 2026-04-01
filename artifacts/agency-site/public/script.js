@@ -9,7 +9,6 @@ const projects = [
   { title: "LOTS Desert Scene",   desc: "Stylised wide-shot desert GFX with cel-shading and ember particles — by @DeveloperTifa.", cat: "Roblox", sub: "GFX", tag: "GFX", img: "images/gfx-5.png" },
   { title: "UVR Military GFX",    desc: "Military-style Roblox GFX for UVR — soldier character with war zone background.", cat: "Roblox", sub: "GFX", tag: "GFX", img: "images/gfx-uvr-military.png" },
   { title: "UVR Helmet GFX",      desc: "Close-up cinematic pilot helmet GFX for UVR — dramatic battlefield atmosphere.", cat: "Roblox", sub: "GFX", tag: "GFX", img: "images/gfx-uvr-helmet.png" },
-  { title: "Pilot Commission GFX", desc: "Pilot-themed GFX commission and game icon — high detail render.", cat: "Roblox", sub: "GFX", tag: "GFX", img: "images/gfx-pilot-commission.jpg" },
   { title: "Soldier GFX",         desc: "Soldier character GFX portfolio piece — cinematic war zone composition.", cat: "Roblox", sub: "GFX", tag: "GFX", img: "images/gfx-soldier.jpg" },
 
   // ── Modeling / UGC ────────────────────────────────────────
@@ -26,7 +25,7 @@ const projects = [
 
   // ── UI Design ─────────────────────────────────────────────
   { title: "Blood Sport UI",      desc: "Full game menu UI for Blood Sport — dark horror theme with custom typography and moon backdrop.", cat: "Roblox", sub: "UI Design", tag: "UI Design", img: "images/ui-bloodsport.png" },
-  { title: "UI Design — 2",       desc: "Custom Roblox UI design showcase.", cat: "Roblox", sub: "UI Design", tag: "UI Design", img: "images/ui-2.webp" },
+  { title: "UI Design — 2",       desc: "Custom Roblox UI design showcase.", cat: "Roblox", sub: "UI Design", tag: "UI Design", img: "images/ui-2.jpg" },
   { title: "UI Design — 3",       desc: "Mobile-style Roblox UI layout — clean and polished.", cat: "Roblox", sub: "UI Design", tag: "UI Design", img: "images/ui-3.jpg" },
   { title: "UI Design — 4",       desc: "Cosmic-themed UI design — sci-fi interface with custom icons.", cat: "Roblox", sub: "UI Design", tag: "UI Design", img: "images/ui-4.jpg" },
   { title: "UI Design — 5",       desc: "Advanced UI system — panels, HUD elements and inventory design.", cat: "Roblox", sub: "UI Design", tag: "UI Design", img: "images/ui-5.webp" },
