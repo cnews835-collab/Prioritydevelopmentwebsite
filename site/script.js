@@ -33,7 +33,7 @@ const projects = [
   { title: "UI Design — 6",       desc: "Detailed Roblox game UI — menus, icons and full interface kit.", cat: "Roblox", sub: "UI Design", tag: "UI Design", img: "images/ui-6.jpg" },
 
   // ── Scripting ─────────────────────────────────────────────
-  { title: "Blood Sport — Scripting", desc: "Roblox Studio scripting showcase for Blood Sport — live gameplay systems demo. Video upload coming soon.", cat: "Roblox", sub: "Scripting", tag: "Scripting" },
+  { title: "Coming Soon", desc: "Scripting showcase — coming soon.", cat: "Roblox", sub: "Scripting", tag: "Scripting" },
 
   // ── Maps / Building / Architecture ────────────────────────
   { title: "Roblox Build — 1",    desc: "Roblox Studio environment build — detailed scene with custom assets.", cat: "Roblox", sub: "Maps", tag: "Maps", img: "images/map-1.png" },
@@ -44,8 +44,8 @@ const projects = [
   { title: "Architecture — 3",    desc: "Large-scale Roblox architecture showcase — detailed exterior.", cat: "Roblox", sub: "Architecture", tag: "Architecture", img: "images/arch-3.png" },
 
   // ── Animations ────────────────────────────────────────────
-  { title: "Animation Showcase — 1", desc: "Roblox character animation showcase — smooth movement and custom rig. Video upload coming soon.", cat: "Roblox", sub: "Animations", tag: "Animations" },
-  { title: "Animation Showcase — 2", desc: "Fluid Roblox animation demo — action sequence with custom keyframes. Video upload coming soon.", cat: "Roblox", sub: "Animations", tag: "Animations" },
+  { title: "Animation Showcase — 1", desc: "Roblox character animation showcase — smooth movement and custom rig.", cat: "Roblox", sub: "Animations", tag: "Animations", youtube: "ivZPzFuR8dk" },
+  { title: "Animation Showcase — 2", desc: "Fluid Roblox animation demo — action sequence with custom keyframes.", cat: "Roblox", sub: "Animations", tag: "Animations", youtube: "rXjcE3Kzti0" },
   { title: "Animation Showcase — 3", desc: "Roblox animation video showcase on YouTube — full sequence demo.", cat: "Roblox", sub: "Animations", tag: "Animations", youtube: "TtXLqbpZDi4" },
 
   // ── Game Systems ──────────────────────────────────────────
