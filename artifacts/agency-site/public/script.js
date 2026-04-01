@@ -33,7 +33,7 @@ const projects = [
   { title: "UI Design — 6",       desc: "Detailed Roblox game UI — menus, icons and full interface kit.", cat: "Roblox", sub: "UI Design", tag: "UI Design", img: "images/ui-6.jpg" },
 
   // ── Scripting ─────────────────────────────────────────────
-  { title: "Blood Sport — Scripting", desc: "Roblox Studio scripting showcase for Blood Sport — live gameplay systems demo.", cat: "Roblox", sub: "Scripting", tag: "Scripting", video: "https://media.discordapp.net/attachments/1482860017412603935/1484307125898580078/Blood_Sport_-_Roblox_Studio_2026-03-17_19-39-42.mp4?ex=69cce97b&is=69cb97fb&hm=c64b63790421a8ce77bb246143f8a710a60a2ea37c0f12b7d4eeec853c2fa8e5&" },
+  { title: "Blood Sport — Scripting", desc: "Roblox Studio scripting showcase for Blood Sport — live gameplay systems demo. Video upload coming soon.", cat: "Roblox", sub: "Scripting", tag: "Scripting" },
 
   // ── Maps / Building / Architecture ────────────────────────
   { title: "Roblox Build — 1",    desc: "Roblox Studio environment build — detailed scene with custom assets.", cat: "Roblox", sub: "Maps", tag: "Maps", img: "images/map-1.png" },
@@ -44,8 +44,8 @@ const projects = [
   { title: "Architecture — 3",    desc: "Large-scale Roblox architecture showcase — detailed exterior.", cat: "Roblox", sub: "Architecture", tag: "Architecture", img: "images/arch-3.png" },
 
   // ── Animations ────────────────────────────────────────────
-  { title: "Animation Showcase — 1", desc: "Roblox character animation showcase — smooth movement and custom rig.", cat: "Roblox", sub: "Animations", tag: "Animations", video: "https://media.discordapp.net/attachments/1464786751540170854/1465849385496871247/Roblox-2025-12-26T04_56_04.159Z.mp4?ex=69ccffdf&is=69cbae5f&hm=b1fa03d86d9fd222dc06b1615c1116d28ff6ddc629b93dd6375854d7e2def04a&" },
-  { title: "Animation Showcase — 2", desc: "Fluid Roblox animation demo — action sequence with custom keyframes.", cat: "Roblox", sub: "Animations", tag: "Animations", video: "https://media.discordapp.net/attachments/1464786751540170854/1465112269342904535/Roblox-2025-12-28T00_59_05.990Z.mp4?ex=69ccf461&is=69cba2e1&hm=6fe658cf6398ecbb510687ea11cb8574dabb6b2cb0e30efc9dd0a941d54b9797&" },
+  { title: "Animation Showcase — 1", desc: "Roblox character animation showcase — smooth movement and custom rig. Video upload coming soon.", cat: "Roblox", sub: "Animations", tag: "Animations" },
+  { title: "Animation Showcase — 2", desc: "Fluid Roblox animation demo — action sequence with custom keyframes. Video upload coming soon.", cat: "Roblox", sub: "Animations", tag: "Animations" },
   { title: "Animation Showcase — 3", desc: "Roblox animation video showcase on YouTube — full sequence demo.", cat: "Roblox", sub: "Animations", tag: "Animations", youtube: "TtXLqbpZDi4" },
 
   // ── Game Systems ──────────────────────────────────────────
