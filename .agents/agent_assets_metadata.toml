@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "LJfSk7MLXl7FBiCrhYwoa"
+uri = "file://site.zip"
+type = "unspecified"
+title = "Priority Development — Netlify Upload (site.zip)"
