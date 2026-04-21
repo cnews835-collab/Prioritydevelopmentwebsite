@@ -22,6 +22,8 @@ const projects = [
   { title: "UGC Model — 4",       desc: "High-quality Roblox UGC accessory model.", cat: "Roblox", sub: "Modeling", tag: "Modeling", img: "images/model-ugc-4.png" },
   { title: "UGC Model — 5",       desc: "Roblox UGC item model showcase.", cat: "Roblox", sub: "Modeling", tag: "Modeling", img: "images/model-ugc-5.png" },
   { title: "UGC Model — 6",       desc: "Early Roblox UGC concept model — clean and minimal.", cat: "Roblox", sub: "Modeling", tag: "Modeling", img: "images/model-ugc-6.png" },
+  { title: "AK-47 Weapon Model",  desc: "Detailed AK-47 rifle 3D model with realistic wood grip and metal finish — game-ready asset for Roblox shooters.", cat: "Roblox", sub: "Modeling", tag: "Modeling", img: "images/model-ak47.jpg" },
+  { title: "Popeyes Chicken Fries", desc: "Stylised low-poly Popeyes chicken fries box model — fun branded food asset with custom logo texturing.", cat: "Roblox", sub: "Modeling", tag: "Modeling", img: "images/model-popeyes-fries.jpg" },
 
   // ── UI Design ─────────────────────────────────────────────
   { title: "Blood Sport UI",      desc: "Full game menu UI for Blood Sport — dark horror theme with custom typography and moon backdrop.", cat: "Roblox", sub: "UI Design", tag: "UI Design", img: "images/ui-bloodsport.png" },
@@ -32,7 +34,10 @@ const projects = [
   { title: "UI Design — 6",       desc: "Detailed Roblox game UI — menus, icons and full interface kit.", cat: "Roblox", sub: "UI Design", tag: "UI Design", img: "images/ui-6.jpg" },
 
   // ── Scripting ─────────────────────────────────────────────
-  { title: "Coming Soon", desc: "Scripting showcase — coming soon.", cat: "Roblox", sub: "Scripting", tag: "Scripting" },
+  { title: "Scripting Showcase — 1", desc: "Roblox scripting demo — custom system in action with smooth gameplay logic.", cat: "Roblox", sub: "Scripting", tag: "Scripting", youtube: "Xyy6pSeYpgk" },
+  { title: "Scripting Showcase — 2", desc: "Roblox scripting feature breakdown — interactive mechanic with clean implementation.", cat: "Roblox", sub: "Scripting", tag: "Scripting", youtube: "-PzZWfGkw_E" },
+  { title: "Scripting Showcase — 3", desc: "Roblox scripting demo — gameplay system showcasing efficient code design.", cat: "Roblox", sub: "Scripting", tag: "Scripting", youtube: "iiAeacw38DI" },
+  { title: "Scripting Showcase — 4", desc: "Roblox scripting demo — full feature walkthrough with polished interactions.", cat: "Roblox", sub: "Scripting", tag: "Scripting", youtube: "BCULMJK-JGo" },
 
   // ── Maps / Building / Architecture ────────────────────────
   { title: "Roblox Build — 1",    desc: "Roblox Studio environment build — detailed scene with custom assets.", cat: "Roblox", sub: "Maps", tag: "Maps", img: "images/map-1.png" },
