@@ -128,11 +128,11 @@
 <section id="stats">
   <div class="section-inner">
     <div class="stat-item">
-      <div class="stat-number">5</div>
+      <div class="stat-number">12+</div>
       <div class="stat-label">Shipped Projects</div>
     </div>
     <div class="stat-item">
-      <div class="stat-number">100+</div>
+      <div class="stat-number">185+</div>
       <div class="stat-label">Members</div>
     </div>
     <div class="stat-item">
@@ -203,52 +203,90 @@
   <div class="section-inner">
     <p class="section-label">Reviews</p>
     <h2 class="section-title">What people <span style="color:var(--primary)">say.</span></h2>
-    <p class="section-sub">Reviews from collaborators and community members — more coming soon.</p>
+    <p class="section-sub">Verified reviews from clients across our services.</p>
 
-    <div class="testimonials-grid">
+    <div class="review-carousel-wrap">
+      <button class="carousel-arrow carousel-prev" aria-label="Previous">&#8249;</button>
 
-      <div class="testimonial-card">
-        <div class="stars">★★★★☆</div>
-        <span class="portfolio-tag tag-modeling" style="margin-bottom:.75rem;display:inline-block;">Modelling</span>
-        <p>"Good Models, pretty good speed of delivery."</p>
-        <div style="font-size:0.8rem;color:var(--muted);margin-bottom:1rem;">Improvements noted: Speed of delivery</div>
-        <div class="testimonial-author">
-          <div class="t-avatar">CL</div>
-          <div>
-            <div class="t-name">Client</div>
-            <div class="t-role">Verified Customer · 4/5</div>
+      <div class="review-carousel-viewport">
+        <div class="review-carousel-track" id="reviewTrack">
+
+          <div class="testimonial-card">
+            <div class="stars">★★★★☆</div>
+            <span class="portfolio-tag tag-modeling" style="margin-bottom:.75rem;display:inline-block;">Modelling</span>
+            <p>"Good Models, pretty good speed of delivery."</p>
+            <div class="review-improve">Improvements noted: Speed of delivery</div>
+            <div class="testimonial-author">
+              <div class="t-avatar">CL</div>
+              <div>
+                <div class="t-name">Client</div>
+                <div class="t-role">Verified Customer · 4 / 5</div>
+              </div>
+            </div>
           </div>
+
+          <div class="testimonial-card">
+            <div class="stars">★★★★☆</div>
+            <span class="portfolio-tag tag-gfx" style="margin-bottom:.75rem;display:inline-block;">Graphic Designing</span>
+            <p>"Good designer, good work."</p>
+            <div class="review-improve">Improvements noted: Speed of delivery</div>
+            <div class="testimonial-author">
+              <div class="t-avatar">CL</div>
+              <div>
+                <div class="t-name">Client</div>
+                <div class="t-role">Verified Customer · 4 / 5</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">★★★☆☆</div>
+            <span class="portfolio-tag tag-bots" style="margin-bottom:.75rem;display:inline-block;">Bot Creation</span>
+            <p>"It was all good at the start, but at the last, the developer took almost a month to reply."</p>
+            <div class="review-improve">Improvements noted: Speed of delivery</div>
+            <div class="testimonial-author">
+              <div class="t-avatar">CL</div>
+              <div>
+                <div class="t-name">Client</div>
+                <div class="t-role">Verified Customer · 3.5 / 5</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <span class="portfolio-tag tag-maps" style="margin-bottom:.75rem;display:inline-block;">Building</span>
+            <p>"It was a very good job done. The developer met our deadline, and was very skilled. There were some issues at the start but they were quickly rectified. Great service and experience overall."</p>
+            <div class="testimonial-author">
+              <div class="t-avatar">CL</div>
+              <div>
+                <div class="t-name">Client</div>
+                <div class="t-role">Verified Customer · 5 / 5</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">★★★★☆</div>
+            <span class="portfolio-tag tag-systems" style="margin-bottom:.75rem;display:inline-block;">Game Improvements</span>
+            <p>"It was all good at the start, but at the last, the developer took almost a month to reply."</p>
+            <div class="review-improve">Improvements noted: Speed of delivery</div>
+            <div class="testimonial-author">
+              <div class="t-avatar">CL</div>
+              <div>
+                <div class="t-name">Client</div>
+                <div class="t-role">Verified Customer · 4 / 5</div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
 
-      <div class="testimonial-card">
-        <div class="stars">★★★★☆</div>
-        <span class="portfolio-tag tag-gfx" style="margin-bottom:.75rem;display:inline-block;">Graphic Designing</span>
-        <p>"Good designer, good work."</p>
-        <div style="font-size:0.8rem;color:var(--muted);margin-bottom:1rem;">Improvements noted: Speed of delivery</div>
-        <div class="testimonial-author">
-          <div class="t-avatar">CL</div>
-          <div>
-            <div class="t-name">Client</div>
-            <div class="t-role">Verified Customer · 4/5</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="testimonial-card">
-        <div class="stars">★★★★★</div>
-        <span class="upcoming-badge">Upcoming</span>
-        <p>"More testimonials are on the way. If you've worked with us, we'd love to hear from you!"</p>
-        <div class="testimonial-author">
-          <div class="t-avatar">?</div>
-          <div>
-            <div class="t-name">Review Pending</div>
-            <div class="t-role">Discord Member</div>
-          </div>
-        </div>
-      </div>
-
+      <button class="carousel-arrow carousel-next" aria-label="Next">&#8250;</button>
     </div>
+
+    <div class="carousel-dots" id="reviewDots"></div>
   </div>
 </section>
 
@@ -344,7 +382,7 @@
     </div>
 
     <div class="footer-bottom">
-      <span>© 2025 Priority Development. A side project, not a company.</span>
+      <span>© 2026 Priority Development. A side project, not a company.</span>
       <div class="footer-socials">
         <!-- Discord -->
         <a href="https://discord.gg/SfyeZFAd" target="_blank" rel="noopener noreferrer" aria-label="Discord">

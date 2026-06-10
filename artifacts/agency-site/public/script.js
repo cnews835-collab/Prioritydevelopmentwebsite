@@ -181,9 +181,48 @@ function initNav() {
   });
 }
 
+// ── Review Carousel ────────────────────────────────────────
+function initReviewCarousel() {
+  const track  = document.getElementById("reviewTrack");
+  const dotsEl = document.getElementById("reviewDots");
+  if (!track) return;
+
+  const cards  = track.querySelectorAll(".testimonial-card");
+  const total  = cards.length;
+  let current  = 0;
+
+  // Build dots
+  dotsEl.innerHTML = Array.from({ length: total }, (_, i) =>
+    `<button class="carousel-dot ${i === 0 ? "active" : ""}" data-i="${i}" aria-label="Review ${i+1}"></button>`
+  ).join("");
+
+  function goTo(idx) {
+    current = (idx + total) % total;
+    track.style.transform = `translateX(-${current * 100}%)`;
+    dotsEl.querySelectorAll(".carousel-dot").forEach((d, i) =>
+      d.classList.toggle("active", i === current)
+    );
+  }
+
+  document.querySelector(".carousel-prev").addEventListener("click", () => goTo(current - 1));
+  document.querySelector(".carousel-next").addEventListener("click", () => goTo(current + 1));
+  dotsEl.querySelectorAll(".carousel-dot").forEach(d =>
+    d.addEventListener("click", () => goTo(+d.dataset.i))
+  );
+
+  // Swipe support
+  let startX = 0;
+  track.addEventListener("touchstart", e => { startX = e.touches[0].clientX; }, { passive: true });
+  track.addEventListener("touchend",   e => {
+    const diff = startX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 40) goTo(current + (diff > 0 ? 1 : -1));
+  });
+}
+
 // ── Init ───────────────────────────────────────────────────
 document.addEventListener("DOMContentLoaded", () => {
   renderTabs();
   initForm();
   initNav();
+  initReviewCarousel();
 });
